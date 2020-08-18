@@ -1,0 +1,62 @@
+function doGet(e){
+  
+  
+
+  var ss = SpreadsheetApp.openById("1MRnYQpqZ7BwtChA3v8S2ZVTIykiF_4-2mAtMbH7079o");
+  //var ss=SpreadsheetApp.openByUrl("https://drive.google.com/file/d/1wiwXUHSvCcqbXXgmucIvntk61mTRJehV/view?usp=sharing");
+  
+  var sheet = ss.getSheets()[2];
+// Get any starred spreadsheets from Google Drive, then open the spreadsheets and log the name
+// of the first sheet within each spreadsheet.
+  
+ 
+  
+    return update_checkin_value(e,sheet); 
+}
+
+//update function
+
+function update_checkin_value(request,sheet){
+ 
+ var flag=0;
+
+
+   var clr = request.parameter.currentLr;
+  if(clr){
+    clr++;
+  }
+  else{
+      var lr= sheet.getLastRow();
+    clr = lr;
+  }
+  var ravatar = sheet.getRange(clr, 1).getValue();
+
+    if(ravatar){
+     
+      flag=1;
+      
+      
+ 
+
+    }
+ 
+  if(flag==0){
+    response= JSON.stringify({
+      "responseStatus": null
+    });
+  }
+  else{
+   response = JSON.stringify({
+    "responseStatus": "ok",
+    "avatar": ravatar,
+     "currentLr":clr
+  });  
+  }
+  
+  return ContentService
+  .createTextOutput(request.parameter.callback + "(" + response + ")")
+  .setMimeType(ContentService.MimeType.JAVASCRIPT);   
+ }
+
+  
+
