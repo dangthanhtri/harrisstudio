@@ -623,6 +623,10 @@ body{
         <div>
           <label for="barcode">Scanner:</label><input type="text" id="barcode" name="barcode" />
         </div>
+        <div id="legend-container">
+          <button class="btn seat" id='comat'></button>
+          <button class="btn seat" id='vangmat'></button>
+        </div>
     </div>
 </div>
 <div class="rcorners-banner">
@@ -658,6 +662,8 @@ body{
                 let Name = document.getElementById('hoten');
                 let Donvi = document.getElementById('donvi');
                 let Msdh = document.getElementById('MSDH');
+                let Comat = document.getElementById('comat');
+                let Vangmat = document.getElementById('vangmat');
                 //________________
                 let S1 = document.getElementById('bt1');
                 let S2 = document.getElementById('bt2');
@@ -948,7 +954,9 @@ body{
                 //console.log(dtbtn1);
                 Name.innerText = data.NAME;
                 Donvi.innerText = data.DONVI;
-                Msdh.innerText = data.ID;             
+                Msdh.innerText = data.ID;         
+                Comat.innerText = data.COMAT;
+                Vangmat.innerText = data.VANGMAT;      
 
                 S1.style.backgroundColor = data.s1;
                 S2.style.backgroundColor = data.s2;
