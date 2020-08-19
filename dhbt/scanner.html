@@ -94,7 +94,8 @@
       </div>
       <div class="row-element">
         <div class="results-frame"  >
-          <h3 id="scannedTextMemo" style="color: white;">Kết quả quét</h3>
+          <textarea id="scannedTextMemo" class="textInput form-memo form-field-input textInput-readonly" rows="3" readonly>
+            </textarea>
         </div>
       </div>
       <div class="alert" id="results">
@@ -114,7 +115,7 @@
     	if(scannedTextMemo)
     	{  
         let ketqua = document.getElementById('results');
-    		scannedTextMemo.innerText = scannedText;
+    		scannedTextMemo.value = scannedText;
         ketqua.style.display = 'block'
         update_checkin_value();
     	}

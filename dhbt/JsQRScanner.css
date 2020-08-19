@@ -35,7 +35,7 @@ body
 {
   width: 100%;
   border-radius: 10px;
-  border: 5px solid #f44336;
+  border: 1px solid white;
   text-align: center;
 }
 .camera-frame {
