@@ -1,0 +1,222 @@
+<!doctype html>
+<!-- The DOCTYPE declaration above will set the     -->
+<!-- browser's rendering engine into                -->
+<!-- "Standards Mode". Replacing this declaration   -->
+<!-- with a "Quirks Mode" doctype is not supported. -->
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Janusz Białobrzewski" />
+    <style>
+    .Informations {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-family:verdana;
+    }
+    .alert {
+      padding: 20px;
+      background-color: #3498DB ;
+      color: white;
+      display: none;
+      border-radius: 10px;
+    }
+
+    .closebtn {
+      margin-left: 15px;
+      color: white;
+      font-weight: bold;
+      float: right;
+      font-size: 22px;
+      line-height: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .closebtn:hover {
+      color: black;
+    }
+    </style>
+    <!--                                                               -->
+    <!-- Consider inlining CSS to reduce the number of requested files -->
+    <!--                                                               -->
+    <link type="text/css" rel="stylesheet" href="JsQRScanner.css">
+
+    <!--                                           -->
+    <!-- Any title is fine                         -->
+    <!--                                           -->
+    <title>QR CODE SCANNER</title>
+    <script>
+    var script_url = "https://script.google.com/macros/s/AKfycbzYpV9jAMqpSLxK_5pS4KdL_8hjYIberX7cK7AGcPF8DcAagI4/exec";
+    function update_checkin_value(){
+    var QRresults = $("#scannedTextMemo").val();
+    var url = script_url+"?callback=ctrlq&id="+QRresults+"&action=checkin";
+    var request = jQuery.ajax({
+      crossDomain: true,
+      url: url ,
+      method: "GET",
+      dataType: "jsonp"
+    });
+  }
+  </script>
+    <!--                                           -->
+    <!-- This script loads your compiled module.   -->
+    <script type="text/javascript" src="./jsPretty/jsqrscanner.nocache.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  </head>
+
+  <body>
+
+    <!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
+    <noscript>
+      <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+        Sử dụng Trình duyệt SAFARI hoặc CHROME để sử dụng được ứng dụng nhé!
+      </div>
+    </noscript>
+
+    <div class="row-element-set row-element-set-QRScanner">
+      <div class="other-frame" style="color: white; font-weight: bold;">ĐẠI HỘI ĐẢNG BỘ DÂN - CHÍNH - ĐẢNG</div>
+      <div class="row-element">
+        <div class="FlexPanel detailsPanel QRScannerShort">
+          <div class="FlexPanel shortInfoPanel">
+            <div class="gwt-HTML" style="text-align: center;">
+              Đưa camera lại vị trí mã QR!
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="camera-frame">
+        <div class="qrscanner" id="scanner">
+        </div>
+      </div>
+      <div class="row-element">
+        <div class="results-frame"  >
+          <textarea id="scannedTextMemo" class="textInput form-memo form-field-input textInput-readonly" rows="3" readonly>
+            </textarea>
+        </div>
+      </div>
+      <div class="alert" id="results">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <div class="Informations">
+          <h4 id='hoten'>Họ và tên</h4>
+          <h4 id='donvi'>Đơn vị</h4>
+          <h4 id='MSDH'>MSĐH</h4>
+        </div>
+        
+      </div>
+      <br>
+    </div>
+  <script type="text/javascript">
+    function onQRCodeScanned(scannedText)
+    {  
+    	if(scannedTextMemo)
+    	{  
+        let ketqua = document.getElementById('results');
+    		scannedTextMemo.value = scannedText;
+        ketqua.style.display = 'block'
+        update_checkin_value();
+    	}
+
+    }
+      
+    function provideVideo()
+    {
+        var n = navigator;
+
+        if (n.mediaDevices && n.mediaDevices.getUserMedia)
+        {
+          return n.mediaDevices.getUserMedia({
+            video: {
+              facingMode: "environment"
+            },
+            audio: false
+          });
+        } 
+        
+        return Promise.reject('Your browser does not support getUserMedia');
+    }
+
+    function provideVideoQQ()
+    {
+        return navigator.mediaDevices.enumerateDevices()
+        .then(function(devices) {
+            var exCameras = [];
+            devices.forEach(function(device) {
+            if (device.kind === 'videoinput') {
+              exCameras.push(device.deviceId)
+            }
+         });
+            
+            return Promise.resolve(exCameras);
+        }).then(function(ids){
+            if(ids.length === 0)
+            {
+              return Promise.reject('Could not find a webcam');
+            }
+            
+            return navigator.mediaDevices.getUserMedia({
+                video: {
+                  'optional': [{
+                    'sourceId': ids.length === 1 ? ids[0] : ids[1]//this way QQ browser opens the rear camera
+                    }]
+                }
+            });        
+        });                
+    }
+    
+    //this function will be called when JsQRScanner is ready to use
+    function JsQRScannerReady()
+    {
+        //create a new scanner passing to it a callback function that will be invoked when
+        //the scanner succesfully scan a QR code
+        var jbScanner = new JsQRScanner(onQRCodeScanned);
+        //var jbScanner = new JsQRScanner(onQRCodeScanned, provideVideo);
+        //reduce the size of analyzed image to increase performance on mobile devices
+        jbScanner.setSnapImageMaxSize(300);
+    	var scannerParentElement = document.getElementById("scanner");
+    	if(scannerParentElement)
+    	{
+    	    //append the jbScanner to an existing DOM element
+    		jbScanner.appendTo(scannerParentElement);
+    	}        
+    }
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script  src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-database.js"></script>
+  <script>
+    const firebaseConfig = {
+    apiKey: "AIzaSyC8kZN3Dnt3VBvqJvWwDfFZpTBPb7V6s5M",
+    authDomain: "checkin-system-4aa77.firebaseapp.com",
+    databaseURL: "https://checkin-system-4aa77.firebaseio.com",
+    projectId: "checkin-system-4aa77",
+    storageBucket: "checkin-system-4aa77.appspot.com",
+    messagingSenderId: "377899531790",
+    appId: "1:377899531790:web:96f27cf567ae0a15f8065f"
+    };
+    // Initialize Firebase  
+    firebase.initializeApp(firebaseConfig)
+    const db = firebase.database();
+  </script> 
+  <script>
+    db.ref('/SEAT-DCD/').on('value', (snapshot)=>{
+                let data = snapshot.val();
+                let Name = document.getElementById('hoten');
+                let Donvi = document.getElementById('donvi');
+                let Msdh = document.getElementById('MSDH');
+                Name.innerText = data.NAME;
+                Donvi.innerText = data.DONVI;
+                Msdh.innerText = data.ID;
+                console.log("ok");
+    });
+  </script>
+
+
+  </body>
+</html>

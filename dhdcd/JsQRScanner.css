@@ -1,0 +1,72 @@
+.qrscanner video {
+  width: auto;
+  height: 180px;
+}
+
+.row-element-set {
+  display: flex;
+  flex-direction: column;
+}
+.row-element {
+  padding: .2em 0em;
+  align-items: center;
+}
+
+.row-element-set-QRScanner
+{
+  max-width: 30em; 
+  display: flex;
+  flex-direction: column;
+}
+
+body
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-field-caption {
+  font-weight: bold;
+
+}
+
+.form-field-input
+{
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid white;
+  text-align: center;
+}
+.camera-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  border-radius: 10px;
+  border: 5px solid #34495E;
+  padding: 10px;  
+  background-color: #34495E;
+}
+
+.other-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  max-width: 100%;
+  border-radius: 10px;
+  border: 5px solid #212F3C ;
+  padding: 10px;  
+  background-color: #212F3C ;
+}
+.results-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  border-radius: 10px;
+  border: 5px solid #5D6D7E ;
+  padding: 5px;  
+  background-color: #5D6D7E ;
+}
