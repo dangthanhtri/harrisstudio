@@ -1,4 +1,3 @@
-
 // MAIN
 function openMain() {
   document.getElementById("main").style.display = "block";
@@ -28,12 +27,23 @@ window.onclick = function(event) {
 
 // HƯỚNG DẪN BOX
 function openHowto() {
-  document.getElementById("myOverlay").style.display = "block";
+  document.getElementById("").style.display = "block";
   closeNav();
   closeMain()
 }
 
 function closeHowto() {
-  document.getElementById("myOverlay").style.display = "none";
+  document.getElementById("").style.display = "none";
+  openMain()
+}
+
+function openIntro() {
+  document.getElementById("").style.display = "block";
+  closeNav();
+  closeMain()
+}
+
+function closeIntro() {
+  document.getElementById("").style.display = "none";
   openMain()
 }
