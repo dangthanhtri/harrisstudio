@@ -1,99 +1,114 @@
-<html lang="en">
-  
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>GFG User Details</title>
-  
-    <!-- INCLUDING JQUERY-->
-    <script src=
-"https://code.jquery.com/jquery-3.5.1.js">
-    </script>
-  
-    <!-- CSS FOR STYLING THE PAGE -->
-    <style>
-        table {
-            margin: 0 auto;
-            font-size: large;
-            border: 1px solid black;
-        }
-  
-        h1 {
-            text-align: center;
-            color: #006600;
-            font-size: xx-large;
-            font-family: 'Gill Sans', 
-                'Gill Sans MT', ' Calibri', 
-                'Trebuchet MS', 'sans-serif';
-        }
-  
-        td {
-            background-color: #E4F5D4;
-            border: 1px solid black;
-        }
-  
-        th,
-        td {
-            font-weight: bold;
-            border: 1px solid black;
-            padding: 10px;
-            text-align: center;
-        }
-  
-        td {
-            font-weight: lighter;
-        }
-    </style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
-  
+
 <body>
-    <section>
-        <h1>GeeksForGeeks</h1>
+  <div class="header">
+    <img id="" src="img/banner.png" >
+    <div class="search-container">
+      <form action="/">
+        <input type="text" placeholder="Tra cứu vị trí các khu..." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </div>
+  <div id="mapScr" class="mapScr">
+    <div class="mapScr-left">
+      <img id="maps" src="img/map-web-3.png" usemap="#image-map">
+      <map name="image-map">
+        <area target="" alt="Nhà nghỉ chân khách, WC" title="Nhà nghỉ chân khách, WC" href="Test" coords="2641,529,2596,206,2757,181,2803,505" shape="poly">
+        <area target="" alt="Nhà quân trang, tiếp khách, WC" title="Nhà quân trang, tiếp khách, WC" href="" coords="2633,1177,2795,1204,2747,1530,2582,1500" shape="poly">
+        <area target="" alt="Lối vào cổng chính" title="Lối vào cổng chính" href="" coords="2747,745,2852,748,2846,958,2744,964" shape="poly">
+        <area target="" alt="Hồ sen" title="Hồ sen" href="" coords="2310,197,2458,197,2455,575,2310,578" shape="poly">
+        <area target="" alt="Hồ sen" title="Hồ sen" href="" coords="2304,1128,2450,1131,2447,1500,2299,1500" shape="poly">
+        <area target="" alt="Khu D" title="Khu D" href="" coords="1816,254,1811,645,2285,645,2285,192" shape="poly">
+        <area target="" alt="Khu  A" title="Khu  A" href="" coords="1811,1055,2275,1063,2272,1506,1811,1433" shape="poly">
+        <area target="" alt="Khu C" title="Khu C" href="" coords="1730,462,1382,459,1382,564,1404,575,1430,605,1436,634,1412,661,1382,680,1347,675,1325,656,1312,634,1285,629,1282,810,1530,810,1530,651,1724,645" shape="poly">
+        <area target="" alt="Khu B" title="Khu B" href="" coords="1282,872,1525,872,1522,1036,1706,1044,1697,1228,1379,1220,1377,1120,1406,1109,1428,1077,1428,1053,1412,1017,1379,1001,1344,1007,1315,1034,1306,1053,1282,1050" shape="poly">
+        <area target="" alt="Sân hành lễ" title="Sân hành lễ" href="" coords="1584,653,1571,1020,2407,1031,2409,648" shape="poly">
+        <area target="" alt="Lô đất dự trữ F" title="Lô đất dự trữ F" href="" coords="1134,516,1131,386,1155,343,1714,259,1716,435,1368,440,1368,559,1333,575,1315,613,1279,621,1269,804,1091,804,1056,783,1056,616,1061,518" shape="poly">
+        <area target="" alt="Lô đất dự trữ E" title="Lô đất dự trữ E" href="" coords="1271,869,1269,1066,1309,1066,1315,1088,1328,1104,1363,1120,1358,1244,1703,1249,1700,1411,1155,1328,1131,1293,1131,1155,1048,1150,1056,896,1088,866" shape="poly">
+        <area target="" alt="Lô đất dự trữ H" title="Lô đất dự trữ H" href="" coords="880,556,878,408,295,494,295,764,950,772,953,556" shape="poly">
+        <area target="" alt="Lô đất dự trữ G" title="Lô đất dự trữ G" href="" coords="292,896,948,904,948,1131,870,1131,872,1249,292,1160" shape="poly">
+        <area target="" alt="Lối thoát hiểm" title="Lối thoát hiểm" href="" coords="880,322,1180,281,1169,230,875,270" shape="poly">
+        <area target="" alt="Nhà nghỉ chân" title="Nhà nghỉ chân" href="" coords="972,1223,1066,1314" shape="rect">
+        <area target="" alt="Nhà nghỉ chân" title="Nhà nghỉ chân" href="" coords="980,365,1077,459" shape="rect">
+        <area target="" alt="Nhà WC" title="Nhà WC" href="" coords="104,1123,193,1214" shape="rect">
+        <area target="" alt="Bãi đỗ xe ô tô" title="Bãi đỗ xe ô tô" href="" coords="2814,605,2631,632,2617,548,2806,524" shape="poly">
+        <area target="" alt="Bãi đỗ xe máy" title="Bãi đỗ xe máy" href="" coords="2803,146,2922,127,2976,206,2997,243,2995,268,2954,508,2857,529,2828,334" shape="poly">
+        <area target="" alt="Bãi đỗ xe máy nhân viên" title="Bãi đỗ xe máy nhân viên" href="" coords="2819,1372,2792,1362,2771,1483,2801,1494" shape="poly">
+        <area target="" alt="Bãi đỗ xe ô tô" title="Bãi đỗ xe ô tô" href="" coords="2628,1070,2782,1095,2771,1173,2612,1146" shape="poly">
+        <area target="" alt="Lối vào cổng phụ" title="Lối vào cổng phụ" href="" coords="2830,1513,2757,1556,2733,1696,2798,1707" shape="poly">
+        <area target="" alt="Cột cờ" title="Cột cờ" href="" coords="1773,848,154" shape="circle">
+    </map>
+    </div>
+    <div class="mapScr-right">
+      <div class="mapScr-right-top">
+        <p style="font-size: 14px;">Chọn một địa điểm trên bản đồ!</p>
+      </div>
+      <div class="mapScr-right-bottom">
+        <p id="search-to-a">A</p>
+        <p id="search-to-b">B</p> 
+        <p id="search-to-c">C</p> 
+        <p id="search-to-d">D</p> 
+      </div>
+    </div>   
+  </div>
+
+  <div id="searchScr">
+    <input type="text" id="myInput"  placeholder="Nhập bất cứ thông tin gì bạn biết..." title="Type in a name">
+    <table id="myTable">
+    <tr class="header">
+      <th style="width:25%;">A</th>
+      <th style="width:25%;">B</th>
+      <th style="width:25%;">C</th>
+      <th style="width:25%;">D</th>
+    </tr>
+    </table>
+  </div>
   
-        <!-- TABLE CONSTRUCTION-->
-        <table id='table'>
-            <!-- HEADING FORMATION -->
-            <tr>
-                <th>GFG UserHandle</th>
-                <th>Practice Problems</th>
-                <th>Coding Score</th>
-                <th>GFG Articles</th>
-            </tr>
+  <div id="introScr">
+    <div id="slideshow">
+      <div>
+        <img src="img/gt1.jpg">
+      </div>
+      <div>
+        <img src="img/gt2.jpg">
+      </div>
+      <div>
+        <img src="img/gt3.jpg">
+      </div>
+    </div>
+    <p>Công trình Nghĩa trang liệt sĩ huyện được khởi công xây dựng vào ngày 18/4/2019 và hoàn thành các hạng mục cơ bản vào ngày 10/6/2020 với tổng mức đầu tư gần 62 tỷ đồng.</p>
+    <p>Nghĩa trang có tổng diện tích 14.804m2, gồm 9 hạng mục, trong đó mộ phần chiếm diện tích hơn 1.767m2.</p>
+    <p>Từ ngày 22/6/2020 đến ngày 15/7/2020 huyện đã tổ chức di dời và cải táng 708 hài cốt liệt sĩ từ Nghĩa trang Liệt sĩ Tân Xuân (xã Xuân Thới Đông) về Nghĩa trang Liệt sĩ huyện Hóc Môn (ấp 3, xã Đông Thạnh).</p>
+  </div>
+
+  <div class="action" onclick="actionToogle()">
+    <span>+</span>
+    <ul>
+        <li onclick="openSearch()"><img src="img/search.svg"> Tìm Kiếm </li>
+        <li onclick="openMap()"><img src="img/map.svg"> Bản đồ </li>
+        <li onclick="openIntro()"><img src="img/about.svg"> Giới Thiệu </li>
+    </ul>
+  </div>
   
-            <script>
-                $(document).ready(function () {
-  
-                    // FETCHING DATA FROM JSON FILE
-                    $.getJSON("gfgdetails.json", 
-                            function (data) {
-                        var student = '';
-  
-                        // ITERATING THROUGH OBJECTS
-                        $.each(data, function (key, value) {
-  
-                            //CONSTRUCTION OF ROWS HAVING
-                            // DATA FROM JSON OBJECT
-                            student += '<tr>';
-                            student += '<td>' + 
-                                value.GFGUserName + '</td>';
-  
-                            student += '<td>' + 
-                                value.NoOfProblems + '</td>';
-  
-                            student += '<td>' + 
-                                value.TotalScore + '</td>';
-  
-                            student += '<td>' + 
-                                value.Articles + '</td>';
-  
-                            student += '</tr>';
-                        });
-                          
-                        //INSERTING ROWS INTO TABLE 
-                        $('#table').append(student);
-                    });
-                });
-            </script>
-    </section>
+
+  <script>
+    function actionToogle() {
+        var action = document.querySelector('.action');
+        action.classList.toggle('active');
+    }
+    
+    
+  </script>
+  <script type="application/javascript" src="js/index.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.rwdImageMaps.min.js"></script>
 </body>
-  
 </html>

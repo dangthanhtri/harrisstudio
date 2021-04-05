@@ -329,7 +329,7 @@ hr {
 
 
 /* Hướng Dẫn*/
-.howtoScr {
+.hdScr {
   height: 100%;
   width: 100%;
   display: none;
@@ -341,7 +341,7 @@ hr {
   background-color: rgb(0,0,0);
 }
 
-.howtoScr-content {
+.hdScr-content {
   position: relative;
   top: 60px;
   width: 90%;
@@ -349,7 +349,7 @@ hr {
   color: #ccc;
 }
 
-.howtoScr .closebtn {
+.hdScr .closebtn {
   position: absolute;
   top: 15px;
   right: 35px;
@@ -358,12 +358,12 @@ hr {
   color: white;
 }
 
-.howtoScr .closebtn:hover {
+.hdScr .closebtn:hover {
   color: #ccc;
 }
 
 /* Giới Thiệu*/
-.IntroScr {
+.gtScr {
   height: 100%;
   width: 100%;
   display: none;
@@ -375,19 +375,19 @@ hr {
   background-color: #ffffff;
 }
 
-.IntroScr-content {
+.gtScr-content {
   position: relative;
   top: 60px;
   margin: 15px;
   color: rgb(0, 0, 0);
 }
 
-.IntroScr-content p {
+.gtScr-content p {
   font-size: 25px;
   text-align: justify;
 }
 
-.IntroScr .closebtn {
+.gtScr .closebtn {
   position: absolute;
   top: 15px;
   right: 35px;
@@ -397,7 +397,7 @@ hr {
 }
 
 
-.IntroScr .closebtn:hover {
+.gtScr .closebtn:hover {
   color: rgb(0, 0, 0);
 }
 
