@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&subset=chinese-traditional');
+
+#til  {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 60pt;
+    font-family: 'Noto Sans TC', sans-serif;
+    vertical-align: baseline;
+    text-align: center;
+}
+
+#des {
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 25pt;
+    font-family: 'Noto Sans TC', sans-serif;
+    vertical-align: baseline;
+    text-align: right;
+}
