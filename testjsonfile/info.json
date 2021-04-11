@@ -1,0 +1,562 @@
+[
+ {
+   "id": 1,
+   "name": "Lê Ngọc Anh",
+   "birthday": 1947,
+   "phone": "0931.770.944",
+   "organization": "Khu phố 2"
+ },
+ {
+   "id": 2,
+   "name": "Huỳnh Thị Nguyệt Ánh",
+   "birthday": 1963,
+   "phone": "0908.047.499",
+   "organization": "Khu phố 5"
+ },
+ {
+   "id": 3,
+   "name": "Đặng Thị Ngọc Bích",
+   "birthday": 1977,
+   "phone": "028.3839.3853",
+   "organization": "Khu phố 1"
+ },
+ {
+   "id": 4,
+   "name": "Nguyễn Thị Bình",
+   "birthday": 1961,
+   "phone": "0909.622.282",
+   "organization": "Khu phố 1"
+ },
+ {
+   "id": 5,
+   "name": "Phạm Thị Chát",
+   "birthday": 1968,
+   "phone": "0937.786.267",
+   "organization": "Khu phố 2"
+ },
+ {
+   "id": 6,
+   "name": "Nguyễn Thị Minh Chỉ",
+   "birthday": 1950,
+   "phone": "0908.174.707",
+   "organization": "Khu phố 3"
+ },
+ {
+   "id": 7,
+   "name": "Hoàng Thị Mộng Đào",
+   "birthday": 1979,
+   "phone": "0903.830.765",
+   "organization": "Khu phố 5"
+ },
+ {
+   "id": 8,
+   "name": "Võ Thị Ngọc Dung",
+   "birthday": 1957,
+   "phone": "0934.960.090",
+   "organization": "Khu phố 3"
+ },
+ {
+   "id": 9,
+   "name": "Hoàng Thị Dung",
+   "birthday": 1946,
+   "phone": "028.3832.6868",
+   "organization": "Khu phố 4"
+ },
+ {
+   "id": 10,
+   "name": "Trần Thị Hai",
+   "birthday": 1948,
+   "phone": "0908.191.248",
+   "organization": "Khu phố 2"
+ },
+ {
+   "id": 11,
+   "name": "Bùi Thị Hải",
+   "birthday": 1959,
+   "phone": "028.3834.2766",
+   "organization": "Khu phố 6"
+ },
+ {
+   "id": 12,
+   "name": "Hoàng Thúy Hằng",
+   "birthday": 1953,
+   "phone": "0798.321.672",
+   "organization": "Khu phố 1"
+ },
+ {
+   "id": 13,
+   "name": "Hoàng Thị Hạnh",
+   "birthday": 1966,
+   "phone": "0898.860.383",
+   "organization": "Khu phố 3"
+ },
+ {
+   "id": 14,
+   "name": "Cao Thị Hiện",
+   "birthday": 1971,
+   "phone": "0938.318.577",
+   "organization": "Khu phố 1"
+ },
+ {
+   "id": 15,
+   "name": "Nguyễn Thị Hiệp",
+   "birthday": 1959,
+   "phone": "0903.193.192",
+   "organization": "Khu phố 4"
+ },
+ {
+   "id": 16,
+   "name": "Trầm Nữ Hoa",
+   "birthday": 1960,
+   "phone": "0902.915.272",
+   "organization": "Khu phố 4"
+ },
+ {
+   "id": 17,
+   "name": "Nguyễn Thị Hoa",
+   "birthday": 1935,
+   "phone": "028.3834.2449",
+   "organization": "Khu phố 5"
+ },
+ {
+   "id": 18,
+   "name": "Trương Thị Hoa",
+   "birthday": 1959,
+   "phone": "0913.112.645",
+   "organization": "CLB Dưỡng sinh"
+ },
+ {
+   "id": 19,
+   "name": "Trần Thị Kim Hoàng",
+   "birthday": 1953,
+   "phone": "0906.429.905",
+   "organization": "Khu phố 4"
+ },
+ {
+   "id": 20,
+   "name": "Lê Thị Huệ",
+   "birthday": 1955,
+   "phone": "0919.005.722",
+   "organization": "Khu phố 6"
+ },
+ {
+   "id": 21,
+   "name": "Nguyễn Thị Mỹ Hường",
+   "birthday": 1981,
+   "phone": "0921.169.066",
+   "organization": "Khu phố 3"
+ },
+ {
+   "id": 22,
+   "name": "Trần Thị Khiêm",
+   "birthday": 1959,
+   "phone": "0987.271.580",
+   "organization": "Khu phố 1"
+ },
+ {
+   "id": 23,
+   "name": "Lê Thị Lân",
+   "birthday": 1946,
+   "phone": "0912.391.946",
+   "organization": "Khu phố 6"
+ },
+ {
+   "id": 24,
+   "name": "Phan Thị Lệ",
+   "birthday": 1962,
+   "phone": "0703.063.296",
+   "organization": "Khu phố 2"
+ },
+ {
+   "id": 25,
+   "name": "Lư Thị Liêng",
+   "birthday": 1950,
+   "phone": "0932.046.599",
+   "organization": "Khu phố 1"
+ },
+ {
+   "id": 26,
+   "name": "Nguyễn Thị Tường Linh",
+   "birthday": 1976,
+   "phone": "0778.553.509",
+   "organization": "Khu phố 4"
+ },
+ {
+   "id": 27,
+   "name": "Nguyễn Thị Thanh Loan",
+   "birthday": 1956,
+   "phone": "0919.514.188",
+   "organization": "Khu phố 3"
+ },
+ {
+   "id": 28,
+   "name": "Đỗ Thị Long",
+   "birthday": 1963,
+   "phone": "0373.445.799",
+   "organization": "Khu phố 4"
+ },
+ {
+   "id": 29,
+   "name": "Đỗ Thị Luyến",
+   "birthday": 1948,
+   "phone": "028.3839.3853",
+   "organization": "Khu phố 1"
+ },
+ {
+   "id": 30,
+   "name": "Trịnh Thị Lý",
+   "birthday": 1959,
+   "phone": "028.3834.1917",
+   "organization": "Khu phố 3"
+ },
+ {
+   "id": 31,
+   "name": "Lê Thị Mai",
+   "birthday": 1956,
+   "phone": "0703.813.014",
+   "organization": "Khu phố 2"
+ },
+ {
+   "id": 32,
+   "name": "Nguyễn Thị Mai",
+   "birthday": 1958,
+   "phone": "0903.148.642",
+   "organization": "Khu phố 4"
+ },
+ {
+   "id": 33,
+   "name": "Trần Thị Ngọc Mỹ",
+   "birthday": 1957,
+   "phone": "028.3832.6325",
+   "organization": "Khu phố 5"
+ },
+ {
+   "id": 34,
+   "name": "Lê Thị Hương Nga",
+   "birthday": 1961,
+   "phone": "0903.331.932",
+   "organization": "Khu phố 6"
+ },
+ {
+   "id": 35,
+   "name": "Nguyễn Thị Nghĩa",
+   "birthday": 1956,
+   "phone": "0903.344.288",
+   "organization": "Khu phố 3"
+ },
+ {
+   "id": 36,
+   "name": "Trần Thị Nguyệt",
+   "birthday": 1949,
+   "phone": "0907.206.049",
+   "organization": "Khu phố 2"
+ },
+ {
+   "id": 37,
+   "name": "Phan Thị Thanh Nhàn",
+   "birthday": 1960,
+   "phone": "0988.536.860",
+   "organization": "Khu phố 2"
+ },
+ {
+   "id": 38,
+   "name": "Hoàng Thị Thu Nhàn",
+   "birthday": 1964,
+   "phone": "0908.570.868",
+   "organization": "CLB Dưỡng sinh"
+ },
+ {
+   "id": 39,
+   "name": "Nguyễn Thị Hồng Nhung",
+   "birthday": 1961,
+   "phone": "0908.956.935",
+   "organization": "Khu phố 4"
+ },
+ {
+   "id": 40,
+   "name": "Phạm Phụng",
+   "birthday": 1950,
+   "phone": "0763.774.999",
+   "organization": "Khu phố 2"
+ },
+ {
+   "id": 41,
+   "name": "Phạm Thị Phước",
+   "birthday": 1953,
+   "phone": "0938.660.366",
+   "organization": "Khu phố 2"
+ },
+ {
+   "id": 42,
+   "name": "Dương Thị Phương",
+   "birthday": 1948,
+   "phone": "",
+   "organization": "Khu phố 5"
+ },
+ {
+   "id": 43,
+   "name": "Trần Thị Minh Phượng",
+   "birthday": 1955,
+   "phone": "0906.757.073",
+   "organization": "Khu phố 1"
+ },
+ {
+   "id": 44,
+   "name": "Nguyễn Thị Kim Phượng",
+   "birthday": 1963,
+   "phone": "0903.740.349",
+   "organization": "Khu phố 5"
+ },
+ {
+   "id": 45,
+   "name": "Nguyễn Thị Kim Sa",
+   "birthday": 1950,
+   "phone": "0972.819.011",
+   "organization": "Khu phố 1"
+ },
+ {
+   "id": 46,
+   "name": "Nguyễn Thị Cẩm Sương",
+   "birthday": 1960,
+   "phone": "0903.765.487",
+   "organization": "Khu phố 1"
+ },
+ {
+   "id": 47,
+   "name": "Nguyễn Thị Thái",
+   "birthday": 1955,
+   "phone": "028.3834.0313",
+   "organization": "Khu phố 5"
+ },
+ {
+   "id": 48,
+   "name": "Trần Thị Ngọc Thanh",
+   "birthday": 1967,
+   "phone": "0931.419.512",
+   "organization": "Khu phố 4"
+ },
+ {
+   "id": 49,
+   "name": "Tô Kim Thoa",
+   "birthday": 1953,
+   "phone": "0777.094.255",
+   "organization": "Khu phố 3"
+ },
+ {
+   "id": 50,
+   "name": "Trần Ngọc Thu",
+   "birthday": 1959,
+   "phone": "0908.247.694",
+   "organization": "Khu phố 3"
+ },
+ {
+   "id": 51,
+   "name": "Vũ Thị Anh Thư",
+   "birthday": 1959,
+   "phone": "0908.150.151",
+   "organization": "Khu phố 3"
+ },
+ {
+   "id": 52,
+   "name": "Dương Thị Thuận",
+   "birthday": 1948,
+   "phone": "0909.357.248",
+   "organization": "Khu phố 5"
+ },
+ {
+   "id": 53,
+   "name": "Phạm Thị Thanh Thúy",
+   "birthday": 1965,
+   "phone": "0772.915.133",
+   "organization": "Khu phố 5"
+ },
+ {
+   "id": 54,
+   "name": "Trần Thị Thu Thủy",
+   "birthday": 1959,
+   "phone": "0773.730.611",
+   "organization": "Khu phố 3"
+ },
+ {
+   "id": 55,
+   "name": "Phạm Thị Thanh Thủy",
+   "birthday": 1960,
+   "phone": "0832.425.257",
+   "organization": "Khu phố 5"
+ },
+ {
+   "id": 56,
+   "name": "Nguyễn Thị Thủy",
+   "birthday": 1966,
+   "phone": "0909.969.282",
+   "organization": "CLB Dưỡng sinh"
+ },
+ {
+   "id": 57,
+   "name": "Nguyễn Thị Thùy Trang",
+   "birthday": 1974,
+   "phone": "0938.153.607",
+   "organization": "Khu phố 1"
+ },
+ {
+   "id": 58,
+   "name": "Lưu Thị Thanh Trang",
+   "birthday": 1969,
+   "phone": "0902.078.873",
+   "organization": "Khu phố 4"
+ },
+ {
+   "id": 59,
+   "name": "Đặng Thị Ánh Triết",
+   "birthday": 1981,
+   "phone": "0983.137.837",
+   "organization": "Khu phố 1"
+ },
+ {
+   "id": 60,
+   "name": "Lâm Tuyết Trinh",
+   "birthday": 1986,
+   "phone": "",
+   "organization": "Khu phố 1"
+ },
+ {
+   "id": 61,
+   "name": "Trần Thị Tươi",
+   "birthday": 1950,
+   "phone": "0338.402.855",
+   "organization": "Khu phố 2"
+ },
+ {
+   "id": 62,
+   "name": "Phạm Thị Tuyến",
+   "birthday": 1948,
+   "phone": "0703.848.336",
+   "organization": "Khu phố 5"
+ },
+ {
+   "id": 63,
+   "name": "Võ Thị Kim Ưng",
+   "birthday": 1954,
+   "phone": "0765.829.009",
+   "organization": "Khu phố 4"
+ },
+ {
+   "id": 64,
+   "name": "Trần Thị Thu Hà",
+   "birthday": 1978,
+   "phone": "0937.298.458",
+   "organization": "Khu phố 3"
+ },
+ {
+   "id": 65,
+   "name": "Thái Kim Tuyền",
+   "birthday": 1966,
+   "phone": "0963.919.530",
+   "organization": "Ban Thẩm tra"
+ },
+ {
+   "id": 66,
+   "name": "Lâm Thị Khánh Tuyên",
+   "birthday": 1963,
+   "phone": "0768.429.938",
+   "organization": "Ban Thẩm tra"
+ },
+ {
+   "id": 67,
+   "name": "Phan Thị Nguyệt",
+   "birthday": 1942,
+   "phone": "0944.287.089",
+   "organization": "Khu phố 4"
+ },
+ {
+   "id": 68,
+   "name": "Dương Ái Kình",
+   "birthday": 1949,
+   "phone": "0902.994.318",
+   "organization": "Khu phố 4"
+ },
+ {
+   "id": 69,
+   "name": "Nguyễn Bích Liên",
+   "birthday": 1961,
+   "phone": "0919.035.656",
+   "organization": "Khu phố 1"
+ },
+ {
+   "id": 70,
+   "name": "Lê Thị Quang Mai",
+   "birthday": 1960,
+   "phone": "0938.980.449",
+   "organization": "Khu phố 5"
+ },
+ {
+   "id": 71,
+   "name": "Võ Thị Thu Thủy",
+   "birthday": 1951,
+   "phone": "0974.456.158",
+   "organization": "Khu phố 3"
+ },
+ {
+   "id": 72,
+   "name": "Trà Thị Tuyết",
+   "birthday": 1958,
+   "phone": "0788.954.847",
+   "organization": "Khu phố 2"
+ },
+ {
+   "id": 73,
+   "name": "Trần Thị Hoàng",
+   "birthday": 1950,
+   "phone": "0942.191.513",
+   "organization": "Đoàn Chủ tịch"
+ },
+ {
+   "id": 74,
+   "name": "Trần Thanh Tâm",
+   "birthday": 1985,
+   "phone": "0938.749.377",
+   "organization": "Đoàn Chủ tịch"
+ },
+ {
+   "id": 75,
+   "name": "Đào Thùy Phương Anh",
+   "birthday": 1991,
+   "phone": "0934.789.803",
+   "organization": "Đoàn Chủ tịch"
+ },
+ {
+   "id": 76,
+   "name": "Lê Thị Anh Thư",
+   "birthday": 1969,
+   "phone": "0902.893.624",
+   "organization": "Đoàn Thư ký"
+ },
+ {
+   "id": 77,
+   "name": "Trần Thị Ngọc Phượng",
+   "birthday": 1992,
+   "phone": "0938.777.741",
+   "organization": "Đoàn Thư ký"
+ },
+ {
+   "id": 78,
+   "name": "Trần Minh Kiều Minh",
+   "birthday": 1961,
+   "phone": "0908.848.013",
+   "organization": "Ban Bầu cử"
+ },
+ {
+   "id": 79,
+   "name": "Lê Thị Minh Ánh",
+   "birthday": 1963,
+   "phone": "0933.782.525",
+   "organization": "Ban Bầu cử"
+ },
+ {
+   "id": 80,
+   "name": "Nguyễn Thị Vân Anh",
+   "birthday": 1966,
+   "phone": "0902.207.514",
+   "organization": "Ban Bầu cử"
+ }
+]
