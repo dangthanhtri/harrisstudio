@@ -11,6 +11,7 @@ function openMap() {
 }
 
 function openSearch() {
+  
   document.getElementById("introScr").style.display = "none";
   document.getElementById("searchScr").style.display = "block";
   document.getElementById("mapScr").style.display = "none";
@@ -29,6 +30,8 @@ $(document).ready(function () {
     var vang = '';
 
     database.ref('/APP-Q3/').on('value', function(snapshot){
+      var table = document.getElementById('myTable');
+      //table.innerHTML = '';
       let data = snapshot.val();
       console.log(data); 
       comat = data.Yes;
@@ -45,11 +48,11 @@ $(document).ready(function () {
           content += '<td>' + val.birthday + '</td>';
           content += '<td>' + val.phone + '</td>';
           content += '<td>' + val.organization + '</td>';
+          content += '<td>' + val.checkin + '</td>';
           content += '</tr>';
         });
-        console.log(content);
-        $('#myTable').append(content);
-        $( "#mytable" ).load( "file:///D:/Github%20Web%20Template/April_Projects/CheckinApp/index.html #mytable" );
+        //console.log(content);
+        table.innerHTML = content;
         highlight_row();
         loadChart(comat, vang);
       }
