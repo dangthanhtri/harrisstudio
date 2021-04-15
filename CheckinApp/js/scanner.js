@@ -24,8 +24,8 @@ function submitCheckIn() {
             if (dataID.id) {
               if (dataID.id == msdb.value) {
                 let updates = {};
-                //pdates["/APP-Q3/" + i + "/checkin"] = 1;
-                updates["/APP-Q3/" + i + "/checkin"] = d.getHours()+":"+d.getMinutes()+":"+d.getSeconds(); 
+                updates["/APP-Q3/" + i + "/checkin"] = 1;
+                updates["/APP-Q3/" + i + "/time"] = d.getHours()+":"+d.getMinutes()+":"+d.getSeconds(); 
                 await database.ref().update(updates);
                 isFinded = true;
                 alert("Hoàn thành!");

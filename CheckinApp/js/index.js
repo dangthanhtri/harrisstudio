@@ -33,11 +33,14 @@ $(document).ready(function () {
       var table = document.getElementById('myTable');
       //table.innerHTML = '';
       let data = snapshot.val();
-      console.log(data); 
-      comat = data.Yes;
-      vang = data.No;
-      //console.log(comat);
-      
+      let totalAttending = 0;
+      //console.log(data); 
+      for (let uid in data) {
+        let u = data[uid];
+          if (u.checkin == 1) totalAttending++;   
+      }
+      let totalLost = 80 - totalAttending;
+      //console.log(totalAttending)
       if(snapshot.exists()){
         var content = '';
         snapshot.forEach(function(data){
@@ -45,16 +48,15 @@ $(document).ready(function () {
           content +='<tr>';
           content += '<td>' + val.id + '</td>';
           content += '<td>' + val.name + '</td>';
-          content += '<td>' + val.birthday + '</td>';
           content += '<td>' + val.phone + '</td>';
           content += '<td>' + val.organization + '</td>';
-          content += '<td>' + val.checkin + '</td>';
+          content += '<td>' + val.time + '</td>';
           content += '</tr>';
         });
         //console.log(content);
         table.innerHTML = content;
         highlight_row();
-        loadChart(comat, vang);
+        loadChart(totalLost, totalAttending);
       }
     });
 
