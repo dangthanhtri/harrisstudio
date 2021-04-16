@@ -3,11 +3,8 @@
   "short_name": "Checkin App",
   "description": "Checkin App",
   "lang": "en-US",
-  "start_url": "/",
+  "start_url": "/index.html",
   "display": "standalone",
-  "orientation": "portrait",
-  "background_color": "#1c1f2b",
-  "theme_color": "#1c1f2b",
   "icons": [
     {
       "src": "/img/icons/128x128.png",
